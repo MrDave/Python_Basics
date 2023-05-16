@@ -42,7 +42,7 @@ runic_alphabet = {
 stats = ["strength", "agility", "endurance", "intelligence", "luck"]
 
 
-def rollstat():
+def roll_stat():
     stat_value = randint(1, 6) + randint(1, 6) + randint(1, 6)
     return stat_value
 
@@ -69,7 +69,7 @@ def main():
         }
 
         for stat in stats:
-            context[stat] = rollstat()
+            context[stat] = roll_stat()
 
         file_name = f"result_{i+1}"
         file_operations.render_template(
