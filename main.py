@@ -3,7 +3,6 @@ from faker import Faker
 from random import randint, sample
 
 
-
 def roll_stat():
     stat_value = randint(1, 6) + randint(1, 6) + randint(1, 6)
     return stat_value
